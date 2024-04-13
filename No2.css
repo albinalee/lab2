@@ -1,0 +1,549 @@
+body {
+    padding-top: 100px;
+    font-family: "Shippori Mincho", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+.container {
+    width: 1340px;
+    padding: 25px 0;
+    margin: 0 auto;
+}
+header .container {
+    padding: 0;
+}
+.ref {
+    position: relative;
+    top: -100px;
+}
+header {
+    font-size: 48px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    color: white;
+    height: 90px;
+    background: #770f0f;
+    box-shadow: 0 6px #410808;
+}
+.header-title {
+    display: block;
+    float: left;
+    padding: 0 50px;
+    line-height: 90px;
+}
+.header-title:hover, .header-list li a:hover {
+    background: #580b0b;
+    transition: all .5s;
+}
+.header-list {
+    list-style: none;
+    float: right;
+    line-height: 90px;
+    text-align: center;
+    background: #770f0f;
+}
+.header-list li {
+    display: inline-block;
+    position: relative;
+}
+.header-list li:hover .dropdown {
+    display: block;
+}
+.header-list li a {
+    display: block;
+    width: 220px;
+    letter-spacing: 2px;
+}
+.dropdown li {
+    display: block;
+}
+.dropdown {
+    width: 100%;
+    background: #770f0f;
+    position: absolute;
+    z-index: 100;
+    display: none;
+}
+.header-list li:hover .dropdown{
+    display: block;
+}
+.burger-menu {
+    display: none;
+}
+.task-title {
+    color: white;
+    padding: 0 50px;
+    margin: 0 auto;
+    width: 1340px;
+    height: 75px;
+    font-size: 42px;
+    letter-spacing: 2px;
+    line-height: 75px;
+    background: #a22041;    
+    box-shadow: 5px 5px #640125;
+}
+.task-title div {
+    float: left;
+}
+.task-title a {
+    display: block;
+    padding: 0 50px;
+    float: right;
+}
+.task-title a:hover {
+    background: #640125;
+}
+h1, h2, h3 {
+    font-weight: 500;
+    margin: 9px 0;
+}
+h1 {
+    font-size: 16pt;
+}
+h2 {
+    font-size: 13.5pt;
+}
+h3 {
+    font-size: 13pt;
+}
+.task-3 .list-title, .task-4 .list-title {
+    color: white;
+    padding: 0 25px;
+    margin: 15px 0;
+    width: 350px;
+    height: 40px;
+    font-size: 24px;
+    line-height: 40px;
+    background: #ffd900;
+    box-shadow: 3px 3px #e6b422;
+}
+.task-3 li, .task-4 li {
+    margin-left: 35px;
+}
+.task-6 img {
+    display: block;
+    margin: 0 auto;
+}
+.task-8 video {
+    display: block;
+    width: 450px;
+    margin: 0 auto;
+}
+.task-9 .container, .task-15 .container, .task-22 .container {
+    padding: 100px 0;
+    margin: 25px auto;
+    background: #a9a9a9;
+}
+.task-9 form, .task-15 form, .task-22 form {
+    color: white;
+    background: #696969;
+    width: 450px;
+    padding: 80px 0 40px;
+    margin: 0 auto;
+    box-shadow: 0 8px #202020
+}
+.task-9 .form-title, .task-15 .form-title, .task-22 .form-title {
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin: 0 auto 25px;
+}
+.task-9 form h2, .task-15 form h2, .task-22 form h2 {
+    padding-top: 10px;
+    margin-left: 100px;
+    letter-spacing: 1px;
+}
+.task-9 input, .task-9 textarea , .task-15 input, .task-15 textarea, .task-22 input {
+    display: block;
+    width: 240px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 2px 5px;
+    margin: 0 auto;
+}
+.task-9 textarea, .task-15 textarea {
+    height: 40px;
+}
+.task-9 .submit, .task-15 .submit, .task-22 .submit {
+    display: block;
+    background: #65318e;
+    width: 250px;
+    height: 60px;
+    border-bottom: 5px solid #460e44;
+    color: white;
+    font-size: 20px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 30px auto;
+}
+.task-9 .submit:hover, .task-15 .submit:hover, .task-22 .submit:hover {
+    background: #674196;
+    border-bottom: 5px solid #65318e;
+    transition: all .5s;
+}
+.task-9 .submit:active, .task-15 .submit:active, .task-22 .submit:active {
+    position: relative;
+    top: 5px;
+    border: none;
+}
+.task-10 table {
+    margin: 0 auto;
+    font-size: 32px;
+    border-collapse: collapse;
+}
+.task-10 tr:nth-child(odd) {
+    background: rgb(255, 244, 231);
+}
+.task-10 tr:nth-child(even) {
+    background: rgb(255, 233, 206);
+}
+.task-10 th {
+    color: white;
+    background: #c32520;
+    letter-spacing: 2px;
+}
+.task-10 th, td {
+    border: 1px solid black;
+    padding: 10px 20px;
+}
+.task-16 iframe {
+    display: block;
+    width: 1120px;
+    height: 630px;
+    margin: 0 auto;
+}
+.task-13 img {
+    display: block;
+    width: 500px;
+    height: 350px;
+    margin: 0 auto;
+    border-radius: 10%;
+}
+.task-13 audio {
+    display: block;
+    margin: 25px auto;
+}
+.task-14 .container {
+    display: flex;
+}
+.task-14 a {
+    display: block;
+    width: 32%;
+    margin-left: 1%;
+}
+.task-14 a:hover {
+    opacity: 0.5;
+}
+.task-14 img {
+    display: block;
+    width: 100%;
+}
+.production {
+    display: flex;
+}
+.production select {
+    font-size: 22px;
+    width: 165px;
+    margin-left: 100px;
+    text-align: center;
+}
+.production input {
+    width: 50px;
+    margin-left: 25px;
+}
+.carousel {
+    width: 800px;
+    display: flex;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.carousel img {
+    width: 800px;
+    height: 450px;
+    display: block;
+}
+@keyframes scroll {
+    0% { margin-left: 0; }
+    25% { margin-left: -100%; }
+    50% { margin-left: -200%; }
+}
+.carousel > :first-child {
+    animation-name: scroll;
+    animation-duration: 15s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+.task-20 canvas {
+    display: block;
+    width: 1000pz;
+    height: 500px;
+    background: #ffebe2;
+    margin: 0 auto;
+}
+.task-21 a {
+    display: block;
+}
+.task-21 .fa-brands {
+    font-size: 100px;
+    line-height: 100px;
+}
+.task-21 .fa-brands:hover {
+    opacity: 0.8;
+    transition: .5s;
+}
+#searchInput {
+    display: block;
+    width: 82%;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 15px auto;
+    font-size: 24px;
+    padding: 15px 24px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80vh;
+}  
+.box {
+    border: 1px solid black;
+    display: flex;
+    flex-flow: row wrap;
+}  
+.item {
+    margin: 3px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+.item-1 {background: red;}
+.item-2 {background: blue;}
+.item-3 {background: yellow;}
+.item-4 {background: green;}
+.item-5 {background: purple;}
+.dragging {
+    opacity: 0.5;
+}
+.over {
+    background-color: rgba(255, 255, 0, 0.3);
+}
+
+@media (max-width: 767px) {
+    header {
+        height: 60px;
+        box-shadow: 0 6px #410808;
+    }
+    header .container {
+        width: 600px;
+    }
+    .header-list {
+        display: none;
+    }
+    .burger-menu {
+        display: block;
+        float: right;
+    }
+    .drawer_hidden {
+        display: none;
+    }
+    .drawer_open {
+        display: flex;
+        height: 60px;
+        width: 60px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 100;
+        cursor: pointer;
+    }
+    .drawer_open span,
+    .drawer_open span::before,
+    .drawer_open span::after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+        background: white;
+        transition: 0.5s;
+        position: absolute;
+    }
+    .drawer_open span:before {
+        bottom: 8px;
+    }
+    .drawer_open span:after {
+        top: 8px;
+    }
+    .drawer_open span:hover {
+        opacity: 0.8;
+    }
+    #drawer_input:checked ~ .drawer_open span {
+        background: rgba(255, 255, 255, 0);
+    }
+    #drawer_input:checked ~ .drawer_open span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    #drawer_input:checked ~ .drawer_open span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    .nav_content {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        z-index: 99;
+        background: #770f0f;
+        transition: .5s;
+    }
+    .nav_content span {
+        display: block;
+        height: 60px;
+        background: #410808;
+    }
+    .nav_list {
+        list-style: none;
+    }
+    .nav_list li {
+        font-size: 24px;
+    }
+    .nav_list li a {
+        display: block;
+        padding: 10px 20px;
+    }
+    .nav_list li a:hover {
+        background: #410808;
+    }
+    #drawer_input:checked ~ .nav_content {
+        left: 70%;
+    }
+    .header-title {
+        font-size: 32px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+    .container {
+        width: 520px;
+        padding: 25px 0;
+        margin: 0 auto;
+    }
+    .header-list {
+        display: none;
+    }
+    .task-title {
+        padding: 0 20px;
+        width: 520px;
+        height: 50px;
+        font-size: 24px;
+        letter-spacing: 1px;
+        line-height: 50px;
+    }
+    h1, h2, h3 {
+        margin: 6px 0;
+    }
+    h1 {
+        font-size: 12pt;
+    }
+    h2 {
+        font-size: 9pt;
+    }
+    h3 {
+        font-size: 8.5pt;
+    }
+    .task-3 .list-title, .task-4 .list-title {
+        color: white;
+        padding: 0 15px;
+        margin: 15px 0;
+        width: 250px;
+        height: 30px;
+        font-size: 18px;
+        line-height: 30px;
+        background: #ffd900;
+        box-shadow: 3px 3px #e6b422;
+    }
+    .task-6 img {
+        width: 400px;
+    }
+    .task-8 video {
+        width: 300px;
+    }
+    .task-9 form, .task-15 form, .task-22 form {
+        width: 350px;
+        padding: 60px 0 30px;
+        box-shadow: 0 6px #202020
+    }
+    .task-9 .form-title, .task-15 .form-title, .task-22 .form-title {
+        font-size: 36px;
+        letter-spacing: 2px;
+        margin: 0 auto 15px;
+    }
+    .task-9 form h2, .task-15 form h2, .task-22 form h2 {
+        font-size: 24px;
+        margin-left: 75px;
+    }
+    .task-9 input, .task-9 textarea , .task-15 input, .task-15 textarea, .task-22 input {
+        width: 200px;
+        letter-spacing: 2px;
+        padding: 2px 5px;
+        margin: 0 auto;
+    }
+    .task-9 textarea, .task-15 textarea {
+        height: 40px;
+    }
+    .task-9 .submit, .task-15 .submit, .task-22 .submit {
+        width: 150px;
+        height: 40px;
+        font-size: 20px;
+        line-height: 35px;
+        padding-bottom: 5px;
+    }
+    .task-10 table {
+        font-size: 14px;
+    }
+    .task-10 th {
+        letter-spacing: 1px;
+    }
+    .task-10 th, td {
+        padding: 5px 10px;
+    }
+    .task-11 iframe, .task-16 iframe {
+        width: 450px;
+        height: 800px;
+    }
+    .task-13 img {
+        display: block;
+        width: 400px;
+        height: 300px;
+        margin: 0 auto;
+        border-radius: 10%;
+    }
+    .production select {
+        font-size: 16px;
+        width: 125px;
+        margin-left: 70px;
+        text-align: center;
+    }
+    .production input {
+        width: 50px;
+        margin-left: 25px;
+    }
+    .carousel {
+        width: 400px;
+    }
+    .carousel img {
+        width: 400px;
+        height: 225px;
+    }
+    .task-20 canvas {
+        display: block;
+        width: 400px;
+        height: 225px;
+        background: #a9a9a9;
+        margin: 0 auto;
+    }
+}

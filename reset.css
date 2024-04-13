@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+h1, h2, h3 {
+    font-weight: lighter;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    transition: all 1s;
+}
