@@ -137,9 +137,9 @@
     }
     #drawer_input:checked ~ .nav_content {
         left: 70%;
-    }</code></br>
+    }</code></br></br>
 <img src="/image/burger.PNG"></img>
-</br></br>
+</br>
 <p>Проверка данных в форме:</p>
 <code>let message = '';
     document.getElementById('myForm').addEventListener('submit', function(event) {
@@ -175,13 +175,13 @@
           return false;
       }
       return true;
-    }</code></br>
+    }</code></br></br>
 <img src="/image/form.PNG"></img>
-</br></br>
+</br>
 <p>Галерея изображений:</p>
 </br>
 <img src="/image/gallery.PNG"></img>
-</br></br>
+</br>
 <p>Реализация функционала Drag-and-Drop:</p>
 <code>const items = [...document.querySelectorAll(".item")];
 const handleDragStart = (e) => {
@@ -192,47 +192,37 @@ const handleDragStart = (e) => {
   console.log(id);
   e.dataTransfer.setData("application/json", JSON.stringify({ id }));
 };
-
 const handleDragEnd = (e) => e.target.classList.remove("dragging");
-
 for (const item of items) {
   item.addEventListener("dragstart", handleDragStart, false);
   item.addEventListener("dragend", handleDragEnd, false);
 }
-
 const handleDragEnter = (e) => {
   if ([...e.target.classList].includes("item")) {
     return;
   }
   e.target.classList.add("over");
 };
-
 const handleDragLeave = (e) => e.target.classList.remove("over");
-
 const handleDragOver = (e) => {
   e.preventDefault();
-
   if ([...e.target.classList].includes("item")) {
     e.dataTransfer.dropEffect = "none";
     return;
   }
-
   if (event.ctrlKey) {
     e.dataTransfer.dropEffect = "copy";
   } else {
     e.dataTransfer.dropEffect = "move";
   }
 };
-
 const handleDrop = (e) => {
   e.preventDefault();
   e.target.classList.remove("over");
   if (e.dataTransfer.files.length > 0) {
     return;
   }
-
   const { id } = JSON.parse(e.dataTransfer.getData("application/json"));
-
   if (event.ctrlKey) {
     const oldItem = document.getElementById(id);
     const newItem = oldItem.cloneNode(true);
@@ -246,17 +236,15 @@ const handleDrop = (e) => {
     e.target.appendChild(document.getElementById(id));
   }
 };
-
 const boxes = [...document.querySelectorAll(".box")];
-
 for (const box of boxes) {
   box.addEventListener("dragenter", handleDragEnter, false);
   box.addEventListener("dragleave", handleDragLeave, false);
   box.addEventListener("dragover", handleDragOver, false);
   box.addEventListener("drop", handleDrop, false);
-}</code></br>
+}</code></br></br>
 <img src="/image/drag.PNG"></img>
-</br></br>
+</br>
 <p>Внедрение карты с маркером:</p>
 <code>ymaps.ready(init);
         function init() {
@@ -273,8 +261,8 @@ for (const box of boxes) {
         }, {
             preset: 'islands#greenDotIconWithCaption'
         }))
-        }</code></br>
+        }</code></br></br>
 <img src="/image/map.PNG"></img>
-</br></br>
+</br>
 <h1 align = "center">Вывод</h1>
 <p>В результате проделанной лабораторной работы, я познакомилась с новыми элементами языка html, научилась реализовать их, потренировалась в использовании CSS и ознакомилась с языком JavaScript.</p>
