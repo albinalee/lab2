@@ -283,16 +283,27 @@ h3 {
     background: #ffebe2;
     margin: 0 auto;
 }
-.task-21 a {
-    display: block;
-}
-.task-21 .fa-brands {
-    font-size: 100px;
-    line-height: 100px;
-}
-.task-21 .fa-brands:hover {
-    opacity: 0.8;
+.fa:hover {
+    opacity: 0.9;
     transition: .5s;
+}
+.fa-twitter {
+    background: #49c5ff;
+    color: white;
+}
+.fa-facebook {
+    background: #4619e5;
+    color: white;
+}
+.fa-reddit {
+    background: #ff5700;
+    color: white;
+}
+.fa {
+    padding: 20px;
+    width: 50px;
+    text-decoration: none;
+    margin: 5px 40px;
 }
 #searchInput {
     display: block;
